@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 5px;
+    display: flex;
+}
+
+.events{
+    flex: 4;
+}
+
+.login{
+    flex: 1;
+}
+/*event side --start*/
+
+
+.event-header{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: #b1040e;
+    color: #fff;
+    padding: 5px;
+}
+
+.flex-handle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.event-handles{
+    background-color: #889551;
+    margin: 5px;
+    width: 350px;
+    padding: 10px;
+}
+
+.handle-list{
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.handle-list li{
+    color: #fff;
+}
+
+.handle-list i {
+    font-size: 13px;
+}
+
+.up-deatils{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.up-deatils p{
+    font-size: 15px;
+}
+
+.up-deatils h6,p{
+    color: #fff;
+}
+
+/*event side --end*/
+/*login side --start*/
+.input{
+    display: flex;
+}
+.input p{
+    background-color: #666d73;
+}
+
+.box-1{
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-logo{
+    text-align: center;
+}
+
+.input p{
+    width: 30%;
+}
+
+.input input{
+    border: 1px solid lightgray;
+}
+
+input:focus {
+    outline: 1px solid lightgray;
+}
+.details{
+    margin-top: 50px;
+}
+/*login side --end*/
+/*Mobile*/
+@media only screen and (max-width : 770px){
+    .event-handles{
+        background-color: #889551;
+        margin: 5px;
+        width: 100%;
+        padding: 10px;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    .events{
+        order:  2;
+    }
+    .login{
+        order: 1;
+    }
+
+    .input{
+        flex-direction: column;
+    }
+
+    .input p{
+        width: 100%;
+    }
+    .details{
+        text-align: center;
+    }
+}
+/*Mobile*/
+/*desktop*/
+@media only screen and (min-width : 771px){}
+/*desktop*/
